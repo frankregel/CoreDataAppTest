@@ -22,6 +22,9 @@
 		775F4A6D18E2F9B800B79FEF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775F4A5118E2F9B700B79FEF /* CoreData.framework */; };
 		775F4A7518E2F9B800B79FEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 775F4A7318E2F9B800B79FEF /* InfoPlist.strings */; };
 		775F4A7718E2F9B800B79FEF /* CoreDataAppTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 775F4A7618E2F9B800B79FEF /* CoreDataAppTestTests.m */; };
+		775F4A8318E2FA0000B79FEF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 775F4A8218E2FA0000B79FEF /* MainViewController.m */; };
+		775F4A8918E30EAC00B79FEF /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 775F4A8818E30EAC00B79FEF /* Person.m */; };
+		775F4A8C18E30EAC00B79FEF /* Postleitzahl.m in Sources */ = {isa = PBXBuildFile; fileRef = 775F4A8B18E30EAC00B79FEF /* Postleitzahl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		775F4A7218E2F9B800B79FEF /* CoreDataAppTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreDataAppTestTests-Info.plist"; sourceTree = "<group>"; };
 		775F4A7418E2F9B800B79FEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		775F4A7618E2F9B800B79FEF /* CoreDataAppTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataAppTestTests.m; sourceTree = "<group>"; };
+		775F4A8118E2FA0000B79FEF /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		775F4A8218E2FA0000B79FEF /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		775F4A8718E30EAC00B79FEF /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		775F4A8818E30EAC00B79FEF /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		775F4A8A18E30EAC00B79FEF /* Postleitzahl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Postleitzahl.h; sourceTree = "<group>"; };
+		775F4A8B18E30EAC00B79FEF /* Postleitzahl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Postleitzahl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +124,14 @@
 		775F4A5318E2F9B700B79FEF /* CoreDataAppTest */ = {
 			isa = PBXGroup;
 			children = (
+				775F4A8018E2F9CF00B79FEF /* View */,
 				775F4A5C18E2F9B800B79FEF /* AppDelegate.h */,
 				775F4A5D18E2F9B800B79FEF /* AppDelegate.m */,
 				775F4A6218E2F9B800B79FEF /* Images.xcassets */,
+				775F4A8718E30EAC00B79FEF /* Person.h */,
+				775F4A8818E30EAC00B79FEF /* Person.m */,
+				775F4A8A18E30EAC00B79FEF /* Postleitzahl.h */,
+				775F4A8B18E30EAC00B79FEF /* Postleitzahl.m */,
 				775F4A5F18E2F9B800B79FEF /* CoreDataAppTest.xcdatamodeld */,
 				775F4A5418E2F9B700B79FEF /* Supporting Files */,
 			);
@@ -151,6 +165,15 @@
 				775F4A7318E2F9B800B79FEF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		775F4A8018E2F9CF00B79FEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				775F4A8118E2FA0000B79FEF /* MainViewController.h */,
+				775F4A8218E2FA0000B79FEF /* MainViewController.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +273,10 @@
 			files = (
 				775F4A6118E2F9B800B79FEF /* CoreDataAppTest.xcdatamodeld in Sources */,
 				775F4A5E18E2F9B800B79FEF /* AppDelegate.m in Sources */,
+				775F4A8918E30EAC00B79FEF /* Person.m in Sources */,
 				775F4A5A18E2F9B800B79FEF /* main.m in Sources */,
+				775F4A8C18E30EAC00B79FEF /* Postleitzahl.m in Sources */,
+				775F4A8318E2FA0000B79FEF /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +396,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreDataAppTest/CoreDataAppTest-Prefix.pch";
 				INFOPLIST_FILE = "CoreDataAppTest/CoreDataAppTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -383,6 +410,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreDataAppTest/CoreDataAppTest-Prefix.pch";
 				INFOPLIST_FILE = "CoreDataAppTest/CoreDataAppTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
